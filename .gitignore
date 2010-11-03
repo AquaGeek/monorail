@@ -1,0 +1,8 @@
+# Ignore Xcode stuff
+build/
+*.pbxuser
+*.mode2v3
+*.mode1v3
+
+# Ignore other stuff
+.DS_Store
