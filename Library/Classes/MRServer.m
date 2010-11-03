@@ -1,5 +1,4 @@
-// Prefix header for all source files of the 'Monorail' static library target in
-// the 'Monorail' project.
+// MRServer
 //
 // Copyright (c) 2010, Tyler Stromberg
 // All rights reserved.
@@ -26,6 +25,8 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-#endif
+#import "MRServer.h"
+
+@implementation MRServer
+
+@end

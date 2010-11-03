@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F197AF0128133D9009007C4 /* MRServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F197AEE128133D9009007C4 /* MRServer.h */; };
+		2F197AF1128133D9009007C4 /* MRServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F197AEF128133D9009007C4 /* MRServer.m */; };
 		AA747D9F0F9514B9006C5449 /* Monorail_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Monorail_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F197AEE128133D9009007C4 /* MRServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRServer.h; sourceTree = "<group>"; };
+		2F197AEF128133D9009007C4 /* MRServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRServer.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* Monorail_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monorail_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libMonorail.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMonorail.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,8 +63,10 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2F197AEE128133D9009007C4 /* MRServer.h */,
+				2F197AEF128133D9009007C4 /* MRServer.m */,
 			);
-			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
@@ -79,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* Monorail_Prefix.pch in Headers */,
+				2F197AF0128133D9009007C4 /* MRServer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F197AF1128133D9009007C4 /* MRServer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
