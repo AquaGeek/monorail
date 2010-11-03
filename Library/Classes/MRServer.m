@@ -29,4 +29,36 @@
 
 @implementation MRServer
 
+@synthesize workerThreads = mWorkerThreads;
+@synthesize workerConnections = mWorkerConnections;
+
+
+#pragma mark -
+#pragma mark Object Lifecycle
+
+
+#pragma mark -
+#pragma mark Server Lifecycle
+
+- (BOOL)start
+{
+   for (unsigned int threadIdx = 0; threadIdx < mWorkerThreads; ++threadIdx)
+   {
+      if (self.debuggingEnabled)
+      {
+         NSLog(@"Create a worker thread");
+      }
+   }
+   
+   return NO;
+}
+
+- (void)stop
+{
+   if (self.debuggingEnabled)
+   {
+      NSLog(@"Stopping the server");
+   }
+}
+
 @end

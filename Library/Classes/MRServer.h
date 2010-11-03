@@ -29,6 +29,21 @@
 
 @interface MRServer : NSObject
 {
+   unsigned int mWorkerThreads;
+   unsigned int mWorkerConnections;
+   
+   BOOL mDebuggingEnabled;  // TODO: More robust debugging options?
 }
+
+@property (nonatomic, assign) unsigned int workerThreads;
+@property (nonatomic, assign) unsigned int workerConnections;
+
+@property (nonatomic, assign) BOOL debuggingEnabled;
+
+// Binds, creates the worker threads, and waits for connections
+- (BOOL)start;
+
+// Shuts down the server and cleans up
+- (void)stop;
 
 @end
